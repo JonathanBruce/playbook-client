@@ -1,0 +1,29 @@
+version: 2
+jobs:
+  build:
+    working_directory: ~/circleci-playbook-client
+    docker:
+      - image: circleci/node:8
+    steps:
+      - checkout
+
+      # Restore yarn cache
+      - type: cache-restore
+        name: Restore yarn cache
+        key: sidecat-yarn-{{ checksum "yarn.lock" }}
+
+      - run:
+          name: Yarn Install
+          command: yarn install
+
+      # Store Cache
+      - type: cache-save
+        key: sidecat-yarn-{{ checksum "yarn.lock" }}
+        paths:
+          - ~/.yarn-cache
+      - run:
+          name: test
+          command: yarn run test
+      - run:
+          name: lint
+          command: yarn run lint
