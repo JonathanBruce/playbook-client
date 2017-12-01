@@ -4,7 +4,10 @@
   "description": "Algorithm code and visualization education tool",
   "main": "src/js/index.js",
   "repository": "git@github.com:SideCatt/playbook-client.git",
-  "author": "JonathanBruce <jbruce232@gmail.com> SamChun <sanghun89@gmail.com>",
+  "authors": [
+    "JonathanBruce <jbruce232@gmail.com>",
+    "SamChun <sanghun89@gmail.com>"
+  ],
   "license": "GNU",
   "scripts": {
     "dev": "./node_modules/webpack-dev-server/bin/webpack-dev-server.js",
@@ -67,7 +70,7 @@
     "webpack-dev-server": "^2.9.4"
   },
   "dependencies": {
-    "bourbon-neat": "^1.9.0",
+    "bourbon-neat": "^2.1.0",
     "classnames": "^2.2.5",
     "prop-types": "^15.6.0",
     "ramda": "^0.25.0",
@@ -79,6 +82,6 @@
     "redux": "^3.7.2",
     "redux-observable": "^0.17.0",
     "rxjs": "^5.5.2",
-    "sidecat": "git+ssh://git@github.com:SideCatt/SideCat.git#5e180601f4c21cefa4d836287a3cff5f1c6913d6"
+    "sidecat": "^0.0.3"
   }
 }

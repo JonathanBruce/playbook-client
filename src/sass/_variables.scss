@@ -1,3 +1,6 @@
+$charcoal: #9b9b9b;
+$fuschia: #bf45ff;
+
 $apercu-regular: 'apercu-regular';
 $apercu-italic: 'apercu-italic';
 $apercu-bold: 'apercu-bold';
@@ -9,56 +12,56 @@ $apercu-medium-italic: 'apercu-medium-italic';
 
 @font-face {
 	font-family: $apercu-regular;
-	src: url('/fonts/Apercu-Regular.tff') format('truetype');
-	src: url('/fonts/Apercu-Regular.eot') format('eot');
-	src: url('/fonts/Apercu-Regular.woff') format('woff');
+	src: url('../fonts/Apercu-Regular.ttf') format('truetype');
+	src: url('../fonts/Apercu-Regular.eot') format('eot');
+	src: url('../fonts/Apercu-Regular.woff') format('woff');
 };
 
 @font-face {
 	font-family: $apercu-italic;
-	src: url('/fonts/Apercu-Italic.tff') format('truetype');
-	src: url('/fonts/Apercu-Italic.eot') format('eot');
-	src: url('/fonts/Apercu-Italic.woff') format('woff');
+	src: url('../fonts/Apercu-Italic.ttf') format('truetype');
+	src: url('../fonts/Apercu-Italic.eot') format('eot');
+	src: url('../fonts/Apercu-Italic.woff') format('woff');
 };
 
 @font-face {
 	font-family: $apercu-bold;
-	src: url('/fonts/Apercu-Bold.tff') format('truetype');
-	src: url('/fonts/Apercu-Bold.eot') format('eot');
-	src: url('/fonts/Apercu-Bold.woff') format('woff');
+	src: url('../fonts/Apercu-Bold.ttf') format('truetype');
+	src: url('../fonts/Apercu-Bold.eot') format('eot');
+	src: url('../fonts/Apercu-Bold.woff') format('woff');
 };
 
 @font-face {
 	font-family: $apercu-bold-italic;
-	src: url('/fonts/Apercu-BoldItalic.tff') format('truetype');
-	src: url('/fonts/Apercu-BoldItalic.eot') format('eot');
-	src: url('/fonts/Apercu-BoldItalic.woff') format('woff');
+	src: url('../fonts/Apercu-BoldItalic.ttf') format('truetype');
+	src: url('../fonts/Apercu-BoldItalic.eot') format('eot');
+	src: url('../fonts/Apercu-BoldItalic.woff') format('woff');
 };
 
 @font-face {
 	font-family: $apercu-light;
-	src: url('/fonts/Apercu-Light.tff') format('truetype');
-	src: url('/fonts/Apercu-Light.eot') format('eot');
-	src: url('/fonts/Apercu-Light.woff') format('woff');
+	src: url('../fonts/Apercu-Light.ttf') format('truetype');
+	src: url('../fonts/Apercu-Light.eot') format('eot');
+	src: url('../fonts/Apercu-Light.woff') format('woff');
 };
 
 @font-face {
 	font-family: $apercu-light-italic;
-	src: url('/fonts/Apercu-LightItalic.tff') format('truetype');
-	src: url('/fonts/Apercu-LightItalic.eot') format('eot');
-	src: url('/fonts/Apercu-LightItalic.woff') format('woff');
+	src: url('../fonts/Apercu-LightItalic.ttf') format('truetype');
+	src: url('../fonts/Apercu-LightItalic.eot') format('eot');
+	src: url('../fonts/Apercu-LightItalic.woff') format('woff');
 };
 
 @font-face {
 	font-family: $apercu-medium;
-	src: url('/fonts/Apercu-Medium.tff') format('truetype');
-	src: url('/fonts/Apercu-Medium.eot') format('eot');
-	src: url('/fonts/Apercu-Medium.woff') format('woff');
+	src: url('../fonts/Apercu-Medium.ttf') format('truetype');
+	src: url('../fonts/Apercu-Medium.eot') format('eot');
+	src: url('../fonts/Apercu-Medium.woff') format('woff');
 };
 
 @font-face {
 	font-family: $apercu-medium;
-	src: url('/fonts/Apercu-MediumItalic.tff') format('truetype');
-	src: url('/fonts/Apercu-MediumItalic.eot') format('eot');
-	src: url('/fonts/Apercu-MediumItalic.woff') format('woff');
+	src: url('../fonts/Apercu-MediumItalic.ttf') format('truetype');
+	src: url('../fonts/Apercu-MediumItalic.eot') format('eot');
+	src: url('../fonts/Apercu-MediumItalic.woff') format('woff');
 };

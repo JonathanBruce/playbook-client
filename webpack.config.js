@@ -10,6 +10,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const srcDir = path.join(__dirname, '/src');
 const webpack = require('webpack');
+const neatPaths = require('bourbon-neat').includePaths;
 
 function getVendorFileNames() {
 	const packageJson = require('./package.json');
@@ -25,6 +26,7 @@ module.exports = {
 	devServer: {
 		contentBase: distDir,
 		port: devPort,
+		historyApiFallback: true,
 		hot: true
 	},
 	devtool: 'inline-source-map',
@@ -35,8 +37,12 @@ module.exports = {
 				use: [
 					{ loader: 'style-loader' },
 					{ loader: 'css-loader' },
-					{ loader: 'sass-loader' },
-					{ loader: 'resolve-url-loader' }
+					{
+						loader: 'sass-loader',
+						options: {
+							includePaths: neatPaths
+						}
+					}
 				]
 			},
 			{
@@ -94,8 +100,7 @@ module.exports = {
 	resolve: {
 		alias: {
 			js: path.join(srcDir, 'js'),
-			sass: path.join(srcDir, 'sass'),
-			fonts: path.join(srcDir, 'fonts')
+			sass: path.join(srcDir, 'sass')
 		},
 		extensions: [ '.js', '.jsx' ]
 	}
