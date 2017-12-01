@@ -1,0 +1,40 @@
+@import 'neat';
+
+$body-grid: (
+	columns: 3,
+	gutter: 20px
+);
+
+$catalogue-grid: (
+	columns: 9,
+	gutter: 20px
+);
+
+.instruction-catalogue {
+	@include grid-container;
+}
+
+.sidebar {
+	@include grid-column(1, $body-grid);
+	height: 100%;
+	
+	.sidecat-sidebar {
+		margin-left: -20px;
+		width: calc(100% + 20px);
+	}
+}
+
+.catalogue {
+	@include grid-column(2, $body-grid);
+	@include grid-container;
+
+	border-left: 1px solid white;
+	padding: 20px 0;
+}
+
+.instruction-card {
+	@include grid-column(3, $catalogue-grid);
+	background-color: $charcoal;
+	height: 220px;
+	margin-bottom: 20px;
+}

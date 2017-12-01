@@ -1,0 +1,13 @@
+body {
+	background: #252525;
+	margin: 0;
+	color: white;
+	font-family: $apercu-regular;
+	font-size: 12px;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}

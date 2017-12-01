@@ -1,0 +1,12 @@
+.sidecat-category {
+	.label {
+		border-bottom: 1px solid white;
+		cursor: pointer;
+		font-size: 24px;
+		padding: 20px 0;
+	}
+
+	&.active {
+		color: $fuschia
+	}
+}

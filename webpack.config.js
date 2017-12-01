@@ -1,11 +1,16 @@
-const devPort = 8080;
+/* global require, __dirname, module */
 const path = require('path');
+const autoprefixer = require('autoprefixer');
+const devPort = 8080;
+const distDir = path.join(__dirname, '/dist/');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const flexboxfixer = require('postcss-flexboxfixer');
+const gradientfixer = require('postcss-gradientfixer');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const srcDir = path.join(__dirname, '/src');
-const distDir = path.join(__dirname, '/dist/');
 const webpack = require('webpack');
+const neatPaths = require('bourbon-neat').includePaths;
 
 function getVendorFileNames() {
 	const packageJson = require('./package.json');
@@ -21,6 +26,7 @@ module.exports = {
 	devServer: {
 		contentBase: distDir,
 		port: devPort,
+		historyApiFallback: true,
 		hot: true
 	},
 	devtool: 'inline-source-map',
@@ -31,7 +37,12 @@ module.exports = {
 				use: [
 					{ loader: 'style-loader' },
 					{ loader: 'css-loader' },
-					{ loader: 'sass-loader' }
+					{
+						loader: 'sass-loader',
+						options: {
+							includePaths: neatPaths
+						}
+					}
 				]
 			},
 			{
@@ -49,6 +60,17 @@ module.exports = {
 				enforce: 'pre',
 				use: [
 					{ loader: 'eslint-loader' }
+				]
+			},
+			{
+				test: /\.(eot|ttf|woff|woff2)$/,
+				use: [
+					{
+						loader: 'file-loader',
+						options: {
+							outputPath: 'fonts/'
+						}
+					}
 				]
 			}
 		]
