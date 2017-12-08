@@ -23,13 +23,18 @@ class InstructionCatalogue extends BaseComponent {
 		});
 	}
 
+	sidebarHandler(name, checked) {
+		this.setState({
+			[ name ]: checked
+		});
+	}
+
 	render() {
 		return (
 			<div className='instruction-catalogue'>
 				<div className='sidebar'>
 					<Sidebar
 						onChange={ this.onSiderbarChange }
-						structList={ structList }
 						valueState={ this.state }/>
 				</div>
 
