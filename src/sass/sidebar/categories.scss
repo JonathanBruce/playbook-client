@@ -1,9 +1,11 @@
 .sidecat-category {
+	cursor: pointer;
+
 	.label {
 		border-bottom: 1px solid white;
 		cursor: pointer;
 		font-size: 24px;
-		padding: 20px 0;
+		padding: 20px 0 20px 20px;
 	}
 
 	&.active {
