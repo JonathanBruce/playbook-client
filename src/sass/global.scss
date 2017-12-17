@@ -11,3 +11,14 @@ body {
     clear: both;
     display: table;
 }
+
+input {
+	border: none;
+	background-image: none;
+	background-color: transparent;
+	color: white;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+	outline: none;
+}

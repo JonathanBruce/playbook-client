@@ -13,3 +13,25 @@
 		float: right;
 	}
 }
+
+.search-bar {
+	position: relative;
+
+	&:after {
+		border-bottom: 1px solid white;
+		bottom: -3px;
+		content: '';
+		display: block;
+		position: absolute;
+		left: 0;
+		-webkit-transition: 1s ease;
+		width: 0;
+		transition: 1s ease;
+	}
+
+	&.is-searching {
+		&:after {
+			width: 100%;
+		}
+	}
+}

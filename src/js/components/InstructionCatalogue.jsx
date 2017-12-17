@@ -34,6 +34,7 @@ class InstructionCatalogue extends BaseComponent {
 			<div className='instruction-catalogue'>
 				<div className='sidebar'>
 					<Sidebar
+						structList={ structList }
 						onChange={ this.onSiderbarChange }
 						valueState={ this.state }/>
 				</div>

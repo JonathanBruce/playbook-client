@@ -29,6 +29,7 @@ $catalogue-grid: (
 	@include grid-container;
 
 	border-left: 1px solid white;
+	margin-left: 0;
 	padding: 20px 0;
 }
 
