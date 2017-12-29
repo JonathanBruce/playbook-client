@@ -1,11 +1,8 @@
 /* global require, __dirname, module */
 const path = require('path');
-const autoprefixer = require('autoprefixer');
 const devPort = 8080;
 const distDir = path.join(__dirname, '/dist/');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
-const flexboxfixer = require('postcss-flexboxfixer');
-const gradientfixer = require('postcss-gradientfixer');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const srcDir = path.join(__dirname, '/src');
@@ -37,6 +34,7 @@ module.exports = {
 				use: [
 					{ loader: 'style-loader' },
 					{ loader: 'css-loader' },
+					{ loader: 'postcss-loader' },
 					{
 						loader: 'sass-loader',
 						options: {

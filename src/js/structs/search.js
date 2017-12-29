@@ -3,7 +3,7 @@ import { Models } from 'sidecat';
 const flatCategories = [
 	new Models.CategoryModel({ value: 'category1', label: 'Sorting Algorithms' }),
 	new Models.CategoryModel({ value: 'category2', label: 'Search Algorithms' }),
-	new Models.CategoryModel({ value: 'category2', label: 'Data Structures' })
+	new Models.CategoryModel({ value: 'category3', label: 'Data Structures' })
 ];
 const categoryOne = new Models.CategoriesModel({
 	name: 'cat1',
